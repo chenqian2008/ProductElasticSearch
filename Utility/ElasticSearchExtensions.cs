@@ -8,8 +8,7 @@ namespace ProductElasticSearch.Utility
 {
     public static class ElasticSearchExtensions
     {
-        public static void AddElasticsearch(
-            this IServiceCollection services, IConfiguration configuration)
+        public static void AddElasticsearch(this IServiceCollection services, IConfiguration configuration)
         {
             var url = configuration["elasticsearch:url"];
             var defaultIndex = configuration["elasticsearch:index"];
